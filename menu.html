@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza Menu</title>
+  <style>
+    /* CSS styles for the menu page */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("https://img.freepik.com/premium-photo/food-background-menu-with-spices-culinary-ingredients-dark-stone-background-cooking-concepts-culinary-background-top-view-free-space-your-text_234595-2347.jpg?w=2000");
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: rgba(240, 234, 234, 0.934);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .category {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .category-title {
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .menu-item {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #e6dcdcec;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 200px; /* Adjust the height as desired */
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .menu-item-info {
+      text-align: center;
+    }
+
+    .menu-item-name {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .menu-item-cost {
+      color: #888888;
+    }
+
+    .add-to-cart {
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <div class="category">
+      <p class="category-title">Veg Pizzas</p>
+      <div class="menu-item">
+        <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Veg Pizza">
+        <div class="menu-item-info">
+          <p class="menu-item-name">Veggie paradise</p>
+          <p class="menu-item-cost">$3</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-sliced-into-six-slices_141793-2157.jpg" alt="Veg Pizza">
+        <div class="menu-item-info">
+          <p class="menu-item-name">Pepperoni Pizza</p>
+          <p class="menu-item-cost">$4</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Waagmi_Soni/Gralic_Crust_Veggie_Pizza.jpg" alt="Veg Pizza">
+        <div class="menu-item-info">
+          <p class="menu-item-name">corn Pizza</p>
+          <p class="menu-item-cost">$1</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+      
+      <!-- Add more veg pizza menu items as needed -->
+    </div>
+
+    <div class="category">
+      <p class="category-title">Non-Veg Pizzas</p>
+      <div class="menu-item">
+        <img src="https://i.ytimg.com/vi/uvkDBTfPF2s/mqdefault.jpg" alt="Non-Veg Pizza">
+        <div class="menu-item-info">
+          <p class="menu-item-name">Non-Veg Pizza 1</p>
+          <p class="menu-item-cost">$11.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://www.teaforturmeric.com/wp-content/uploads/2017/11/tandoori-chicken-pizza-4442-500x500.jpg" alt="Non-Veg Pizza">
+        <div class="menu-item-info">
+          <p class="menu-item-name">Non-Veg Pizza 2</p>
+          <p class="menu-item-cost">$12.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/9136faaf-b023-4b60-978e-00ca68f425b4_PM_nv_loaded_side.webp?ver=V0.0.1" alt="Non-Veg Pizza">
+        <div class="menu-item-info">
+          <p class="menu-item-name">Non-Veg Pizza 3</p>
+          <p class="menu-item-cost">$12.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Add more non-veg pizza menu items as needed -->
+    </div>
+
+    <div class="category">
+      <p class="category-title">Beverages</p>
+      <div class="menu-item">
+        <img src="https://cdnb.artstation.com/p/assets/images/images/026/049/813/large/trinath-sarkar-coca-f-02.jpg?1587730603" alt="Beverage">
+        <div class="menu-item-info">
+          <p class="menu-item-name">Beverage 1</p>
+          <p class="menu-item-cost">$2.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1622766815178-641bef2b4630?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8N3VwfGVufDB8fDB8fHww&w=1000&q=80" alt="Beverage">
+        <div class="menu-item-info">
+          <p class="menu-item-name">Beverage 2</p>
+          <p class="menu-item-cost">$1.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://static2.bigstockphoto.com/8/0/4/large1500/408441887.jpg" alt="Beverage">
+        <div class="menu-item-info">
+          <p class="menu-item-name">Beverage 2</p>
+          <p class="menu-item-cost">$1.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <p class="category-title">Condiments</p>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1472476443507-c7a5948772fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2V0Y2h1cHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="Condiment">
+        <div class="menu-item-info">
+          <p class="menu-item-name">Condiment 1</p>
+          <p class="menu-item-cost">$0.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://t3.ftcdn.net/jpg/00/60/34/98/360_F_60349860_h6LSNcIHMUL8bgrrVzYJfiF0TvydYBz6.jpg" alt="Condiment">
+        <div class="menu-item-info">
+          <p class="menu-item-name">Condiment 2</p>
+          <p class="menu-item-cost">$1.49</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://st3.depositphotos.com/10614052/34834/i/450/depositphotos_348345278-stock-photo-bowl-tasty-honey-mustard-sauce.jpg" alt="Condiment">
+        <div class="menu-item-info">
+          <p class="menu-item-name">Condiment 2</p>
+          <p class="menu-item-cost">$1.49</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Add more condiment menu items as needed -->
+    </div>
+  </div>
+</body>
+</html>

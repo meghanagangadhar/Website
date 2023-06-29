@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(pp.jpg) center center fixed no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container h1{
+    color:rgb(212, 187, 61);
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+ .navbar  ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+
+ }
+ .navbar ul li a{
+    text-decoration: none;
+    color:rgb(221, 235, 235);
+    padding: 4px;
+    transition: .3s;
+ }
+
+ .navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset;
+ }
+.content{
+    position: absolute;
+    width: 100%;
+    font-style: italic;
+    color: aliceblue;
+    top: 40%;
+    left: 30px;
+}
+.content h1{
+    text-align: center;
+
+
+}
+
+.navbar .login{
+    padding: 8px;
+    background-color:orangered;
+}
+
+
+
+.content h1{
+    font-size:50px;
+}
+
+.content p{
+    text-align: center;
+    margin: top 17px;
+    color: rgb(232, 232, 123);
+
+}
+
+

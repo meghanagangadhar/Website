@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup</title>
+        <style>
+body {
+  background-image: url('https://img.freepik.com/premium-photo/slices-pizza-with-tomatoes-branch-spinach_220925-26335.jpg?w=2000');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  padding: 20px;
+  border: 3px solid white;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  background-color: rgba(145, 140, 140, 0.053);
+  margin-right: 20%;
+}
+
+h2 {
+  text-align: center;
+  font-style: italic;
+  color: rgb(242, 216, 46);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #e7fef0;
+  background-color: #10100f;
+  padding: 3px px; /* Adjust the padding as needed */
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #10100f;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(214, 164, 70);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #d2b16a;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container-wrapper">
+            <div class="container">
+                <h2>Signup</h2>
+                <form action="login.html" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                   <input type="submit" value="Signup" >
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

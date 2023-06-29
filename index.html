@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Foods</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .container {
+                 opacity: 0;
+                 transform: translateY(-20px);
+                 animation: fade-in 1s ease-in-out forwards;
+                }
+                .navbar {
+                    opacity: 0;
+                    transform: translateY(-20px);
+                    animation: fade-in 1s ease-in-out 0.5s forwards;
+                }
+                .content {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    animation: fade-in 1s ease-in-out 1s forwards;
+                }
+                @keyframes fade-in {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(-20px);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+        </style>
+     </head>
+<body>
+    <div class="container">
+        <h1>My Foods</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.instagram.com/meghana_gangadhar_/">Subscribe</a></li>
+                <li><a href="signin.html">signin</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="content">
+        <h1>Meghana's Food</h1>
+        <p>“A pizza slice a day keeps sadness away.”</p>
+    </div>
+    
+</body>
+
+</html>
